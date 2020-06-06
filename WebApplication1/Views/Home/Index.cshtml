@@ -1,31 +1,41 @@
 ﻿@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-  <br/>
-    <div>
-        <img id="blah" src="#" alt="your image" style="display:none"/>
-    </div>
-    <div>
-        <input type="file" title="search image" id="imgInp" name="file"/>
-    </div>
-    <br/>
-    <div>
-        Name
-    </div>
-    <div>
-        <input type="text"
-               id="txt_Name"
-               name="Name" />
-    </div>
     <br />
-    <div>
-        Branch
-    </div> <div> <input type="text" id="txt_Branch" name="Branch" /> </div>
-    <div>
-        Designation
-    </div> <div> <input type="text" id="txt_Designation" name="Designation" /> </div>
-    <br />
-    <div>
-        <input type="submit" id="submit" title="save" disabled="disabled" value="Save"/>
+
+
+
+
+    <div class="container">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h3>Add Caption</h3></div>
+            <div class="panel-body">
+
+                <div>
+                    <img id="blah" src="#" alt="your image" class="img-rounded" width="100" height="100" style="display:none" />
+                </div>
+                <br />
+                <div>
+                    <input type="file" title="search image" id="imgInp" name="file" />
+                </div>
+                <br />
+               
+
+                <div>
+                    <input type="text" id="txt_Name"  name="Name" placeholder="Enter Name" class="form-control" />
+                </div>
+                <br />
+                
+                <div> <input type="text" id="txt_Branch" name="Branch" placeholder="Enter Branch" class="form-control"/> </div>
+                <br />
+            
+                <div> <input type="text" id="txt_Designation" name="Designation" placeholder="Enter Designation" class="form-control"/> </div>
+                <br />
+                <div>
+                    <input type="submit" id="submit" title="Generate Caption" class="btn btn-primary" disabled="disabled" value="Save" />
+                </div>
+            </div>
+        </div>
     </div>
 
 }
